@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox alignment="TOP_CENTER" spacing="15" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.javaee.courseoopwork.HelloController">
+    <padding>
+        <Insets top="20" bottom="20" left="20" right="20"/>
+    </padding>
+
+    <Label text="Polynomial 1 Coefficients (from x⁰ to xⁿ, comma-separated):"/>
+    <TextField fx:id="inputPoly1"/>
+
+    <Label text="Polynomial 2 Coefficients (from x⁰ to xⁿ, comma-separated):"/>
+    <TextField fx:id="inputPoly2"/>
+
+    <Label text="X value for evaluation (e.g. 2.0):"/>
+    <TextField fx:id="inputX"/>
+
+    <HBox spacing="10">
+        <Button text="Calculate" onAction="#onCalculateClick"/>
+        <Button text="Clear" onAction="#onClearClick"/>
+    </HBox>
+
+    <Label text="Result:"/>
+    <TextArea fx:id="resultArea" prefRowCount="8" wrapText="true"/>
+</VBox>
+
